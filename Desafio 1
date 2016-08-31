@@ -4,13 +4,14 @@
 float ganhador1(float premio){
 	return premio*0.46;
 }
+
 float ganhador2(float premio){
 	return premio*0.32;
 }
+
 float ganhador3(float premio){
 	return premio*0.22;
 }
-    
 
 int main(){
 	float premio;
