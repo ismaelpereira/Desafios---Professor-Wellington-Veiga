@@ -1,23 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-double Harmonia(int n){
-	float vet[n];
-	float somatoria = 0;
+float Harmonia(int n){
+ double resultado=0;
 	for(int i=1;i<=n;i++){
-  		vet[i] = (float) 1/i;
+  resultado+= (double) 1/i;
 	}
-	
-	for(int i=1;i<=n;i++ ){
-		somatoria += vet[i];
-	}
-	return somatoria;
+	return resultado;
 }
 
 int main(){
 	int n;
 	printf("Digite um numero: ");
 	scanf("%i",&n);
-	printf("%f\n",Harmonia(n));
+	printf("%lf\n",Harmonia(n));
 	system("pause");
 }
